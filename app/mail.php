@@ -1,7 +1,7 @@
 php:
 <?php
 
-$recepient = "";
+$recepient = "info@mail.ru"; //прописать свой email
 $sitename = "Ремонт квартир и домов по всему Большому Сочи";
 
 $name = trim($_POST["name"]);

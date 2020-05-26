@@ -79,5 +79,31 @@ $(document).ready(function () {
         }
         return false;
     });
+
+    $('.menu .go_to').click(function () {
+        var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length != 0) {
+            $('html, body').animate({
+                scrollTop: $(scroll_el).offset().top
+            }, 500);
+
+            $('header').fadeOut();
+        }
+
+        return false;
+    });
 });
 //плавный скролл end
+
+$('.btn-burger').click(function () {
+   $(this).toggleClass('menu-bar--full');
+   $('header').fadeToggle();
+});
+
+$(window).on('load resize', function() {
+    if ($(window).width() < 830) {
+       $('.menu').addClass('mobile-menu');
+    } else {
+        $('.menu').removeClass('mobile-menu');
+    }
+});
