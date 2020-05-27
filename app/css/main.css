@@ -321,7 +321,9 @@ main {
   main .description {
     font-size: 36px;
     margin: 15px 0 30px;
-    color: #f9a825; }
+    color: #c57d07;
+    border: 3px solid #f9a825;
+    padding: 10px; }
   main .list-social {
     display: none; }
 
@@ -1274,4 +1276,6 @@ footer {
   .main-info .description {
     font-size: 20px; }
   main .description {
-    font-size: 24px; } }
+    font-size: 24px; }
+  h1 {
+    font-size: 28px; } }
